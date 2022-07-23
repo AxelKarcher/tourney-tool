@@ -1,0 +1,19 @@
+#buttonContainer {
+  display: 'flex';
+  align-items: 'center';
+  font-size: 25px;
+  font-weight: bold;
+  box-shadow: 0 2px 7px black;
+  border-width: 2px;
+  border-style: solid;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.anim {
+  &:active {
+    transform: scale(0.96);
+  }
+
+  transition: transform 0.1s, border-color 0.2s;
+}
